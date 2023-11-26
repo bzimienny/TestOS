@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Witaj w instalatorze TestOS wersja 1.1";
 echo "Enter-rozpocznij instalacje";
 read n;
 mkfs.ext4 /dev/sda3;
