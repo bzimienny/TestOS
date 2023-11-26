@@ -9,7 +9,7 @@ echo "FONT=Lat2-terminus16">>/etc/vconsole.conf;
 echo "FONT_MAP=8859-2">>/etc/vconsole.con;
 touch /etc/hostname;
 echo "TestOS">/etc/hostname;
-pacman -S pulseaudio openldap jdk-openjdk dhcpcd git clang lxqt lightdm lightdm-gtk-greeter libreoffice ettercap kitty vim intellij-idea-community-edition ;
+pacman -S pulseaudio openldap jdk-openjdk dhcpcd git clang lxqt lightdm lightdm-gtk-greeter libreoffice ettercap kitty vim intellij-idea-community-edition grub ;
 systemctl enable dhcpcd;
 systemctl enable lightdm;
 systemctl enable lightdm-gtk-greeter;
