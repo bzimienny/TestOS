@@ -12,7 +12,6 @@ echo "TestOS">/etc/hostname;
 pacman -S pulseaudio openldap jdk-openjdk dhcpcd git clang lxqt lightdm lightdm-gtk-greeter libreoffice ettercap kitty vim intellij-idea-community-edition grub ;
 systemctl enable dhcpcd;
 systemctl enable lightdm;
-systemctl enable lightdm-gtk-greeter;
 grub-install /dev/sda;
 grub-mkconfig -o /boot/grub/grub.cfg;
 pacman -Suy;
