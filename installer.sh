@@ -12,8 +12,8 @@ commands=([0]="mkfs.ext4 /dev/sda3"\
        	[6]="archroot /mnt")
 for ((x=0;x<10;x++));
 do
-dialog --title "installation" --gauge "Please wait" 7 70 2>$status; 
-echo ${commands[$x]};
+dialog --title "installation" --gauge "Please wait" 7 70 $status; 
+${commands[$x]};
 ((status+=16));
 done
 
